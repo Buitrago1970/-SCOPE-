@@ -12,8 +12,8 @@ display: grid;
   grid-template-rows: 1.3fr 0.6fr; 
   gap: 0px 0px; 
   grid-template-areas: 
-    "SectionMainDescription SectionShoppingCart NavBar"
-    "SectionMainDescription SectionShopProducts NavBar"; 
+    "SectionMainDescription SectionShopProducts NavBar"
+    "SectionMainDescription SectionShoppingCart NavBar"; 
   `
 export default function Home() {
   return (
