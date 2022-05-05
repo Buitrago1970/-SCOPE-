@@ -38,7 +38,8 @@ const StyledContainerItemShoppingCart = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr; 
   gap: 0px 0px; 
-  padding: 10px;
+  padding: 7px;
+  font-size: 15px;
 `
 const StyledShoppingTotal = styled.div`
     display: flex;
@@ -93,8 +94,8 @@ export default function SectionShoppingCart() {
                 <StyledContainerItemShoppingCart>
                     <StyledP>01.</StyledP>
                     <StyledP>SCOPE T-Shirt XL</StyledP>
-                    <StyledP>UNI:1</StyledP>
-                    <StyledP>$120.000</StyledP>
+                    <StyledP>UNI:2</StyledP>
+                    <StyledP>$888.000</StyledP>
                 </StyledContainerItemShoppingCart>
             </StyledShoppingCartMiniProductsTable>
             <StyledShoppingTotal>
