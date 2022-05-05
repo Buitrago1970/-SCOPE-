@@ -1,7 +1,8 @@
-import Document from 'next/document'
+import Document, {Html, Head, Main, NextScript } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
+  //--------------For styled-components only------------//
   static async getInitialProps(ctx) {
     const sheet = new ServerStyleSheet()
     const originalRenderPage = ctx.renderPage
@@ -26,5 +27,26 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal()
     }
+  }
+  //---------------------------------------------------//
+  render() {
+    return (
+      <Html lang="es">
+        <Head>
+          <link
+            href="https://use.typekit.net/cua3xaj.css"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    )
   }
 }
