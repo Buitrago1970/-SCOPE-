@@ -12,6 +12,7 @@ display: grid;
   grid-template-columns: 1.5fr 1.5fr 0.07fr; 
   grid-template-rows: 1.3fr 0.5fr; 
   gap: 0px 0px; 
+  height: 100%;
   grid-template-areas: 
     "SectionMainDescription SectionShopProducts NavBar"
     "SectionMainDescription SectionShoppingCart NavBar"; 

@@ -9,25 +9,26 @@ const StyledSectionMainDescriptionProduct = styled.div`
     background-color: black;
     color: #FFFFFF;
     grid-area: SectionMainDescription; 
-
+    font-family: 'Cinzel', serif;
+    height: 100%;
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
     display: flex;
     justify-content: space-between;
     margin: 15px 10px;
+    font-size: 10px;
+    font-family: cooper-black-std, serif;
 `
 const StyledContainerTextHeaderMainDescription = styled.div`
 `
 const StyledHeaderP = styled.p`
     margin: 0;
-    font-size: 15px;
 `
 // section main
 const StyledcontainerSectionMainProduct = styled.div`
     border: 1px solid #D5C4BA;
-    padding: 10px 0 10px 10px;
-`
+    `
 const StyledContainerInfoTextProductName = styled.div`
     display: grid; 
     grid-template-columns: 0.4fr 2.0fr 0.4fr; 
@@ -35,10 +36,13 @@ const StyledContainerInfoTextProductName = styled.div`
     gap: 0px 0px; 
     grid-template-areas: 
         "limited-edition name QuienSabe";
+        padding: 10px;
+        padding-bottom: 0;
 `
 const StyledContainerNameProduct = styled.div`
     text-align: center;
     grid-area: name;
+    font-family: cooper-black-std, serif;
 `
 const StyledContainerLimitedEdition = styled.div`
     grid-area: limited-edition;
@@ -48,7 +52,7 @@ const StyledContainerLimitedEdition = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    max-width: 60px;
 `
 const StyledLimitedEditionP = styled.p`
     margin: 0;
@@ -60,8 +64,17 @@ const StyledLimitedEditionNumberP = styled.p`
 `
 // images
 const StyledContainerImagesProduct = styled.div`
-    width: 50%;
+    width: 100%;
     margin: auto;
+    overflow-x: scroll;
+scroll-behavior: smooth;
+
+max-height: 25rem;
+`
+const StyledContainerImage = styled.div`
+width: 100%;
+margin: auto;
+border-bottom: 1px solid #D5C4BA;
 `
 // info-descriptio-product
 const StyledContainerSectionInfoProduct = styled.div`
@@ -74,6 +87,7 @@ const StyledContainerSectionInfoProduct = styled.div`
     grid-template-areas: 
         "colorSize details"
         "PribeBuy details"; 
+        height: 42%;
 `
 const StyledContainerColorSize = styled.div`
     grid-area: colorSize;
@@ -84,16 +98,26 @@ const StyledContainerPriceBuy = styled.div`
     grid-area: PribeBuy;
     border-top: 1px solid #D5C4BA;
     border-right: 1px solid #D5C4BA;text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3{
+        margin-bottom: 15px;
+    }
 `
 const StyledContainerDetails = styled.div`
     grid-area: details;
     padding: 15px;
+    text-align: center;
+    h3{
+        margin: 15px;
+    }
 `
 const StyledDetail = styled.div`
-    height: 65%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
     font-size: 12px;
+    text-align: initial;
+    font-family: Arial, Helvetica, sans-serif;
 `
 const StyledBtnBuy = styled.button`
     background: none;
@@ -169,7 +193,36 @@ export default function SectionInfoProduct() {
                     </StyledContainerNameProduct>
                 </StyledContainerInfoTextProductName>
                 <StyledContainerImagesProduct>
-                    <Image src={tshirt} alt='Logo' />
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
+                    <StyledContainerImage>
+                        <Image src={tshirt} alt='Logo' />
+                    </StyledContainerImage>
                 </StyledContainerImagesProduct>
             </StyledcontainerSectionMainProduct>
             <StyledContainerSectionInfoProduct>
@@ -193,7 +246,7 @@ export default function SectionInfoProduct() {
                 </StyledContainerColorSize>
                 <StyledContainerPriceBuy>
                     <h3>
-                        $100.000.oo
+                        $1ooo.ooo.oo
                     </h3>
                     <StyledBtnBuy onClick={() => alert('Click Pendejo ')}>
                         BUY

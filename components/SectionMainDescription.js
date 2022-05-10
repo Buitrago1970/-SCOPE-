@@ -20,11 +20,9 @@ text-align: center;
 margin-bottom: 40px;
 `
 
-
 const StyledContainerTextsMainDescription = styled.div`
     display: flex;
     justify-content: space-between;
-
 `
 const StyledContainerTextAttributes = styled.div`
     width: 50%;
@@ -44,19 +42,13 @@ const StyledContainerTextsAttributes = styled.div`
 const StyledPrincipalText = styled.h1`
     font-size: 70px;
     margin: 0;
-    
 `
 const StyledHeaderP = styled.p`
-    margin: 0;
-    font-size: 15px;
-    
-
+    margin: 0;  
 `
 const StyledContainerDescriptioText = styled.div`
 width:100%;
 margin-top:25px;
-
-
 `
 const StyledTextDescriptionMain = styled.p`
 font-size: 30px;
