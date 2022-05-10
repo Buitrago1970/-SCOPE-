@@ -5,6 +5,7 @@ const StyledSectionMainDescription = styled.div`
 background-color: #7A79A5;
 grid-area: SectionMainDescription; 
 color: #D5C4BA;
+height:100vh;
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
@@ -35,6 +36,7 @@ const StyledTextAttributes = styled.div`
 `
 const StyledContainerDescriptioTextMainDescription = styled.div`
     text-align: center;
+    
 `
 const StyledContainerTextsAttributes = styled.div`
     border-bottom: 1px solid;
@@ -42,17 +44,22 @@ const StyledContainerTextsAttributes = styled.div`
 const StyledPrincipalText = styled.h1`
     font-size: 70px;
     margin: 0;
+    
 `
 const StyledHeaderP = styled.p`
     margin: 0;
     font-size: 15px;
+    
+
 `
 const StyledContainerDescriptioText = styled.div`
+width:100%;
+margin-top:25px;
+
 
 `
 const StyledTextDescriptionMain = styled.p`
 font-size: 30px;
-height: 160px;
 overflow-y: scroll;
 scroll-behavior: smooth;
 margin: 0;

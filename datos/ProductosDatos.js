@@ -5,7 +5,7 @@ export const PortafolioObjUno = {
     nombre: "T-SHIRT",
     img: require("../public/productos/t-shirt.png").default,
     alt: "scope t-shirt",
-    precio: "100000",
+    precio: "100,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -16,7 +16,7 @@ export const PortafolioObjDos = {
     nombre: "T-SHIRT2",
     img: require("../public/productos/t-shirt2.png").default,
     alt: "scope t-shirt",
-    precio: "510000",
+    precio: "510,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -27,7 +27,7 @@ export const PortafolioObjTres = {
     nombre: "CAP",
     img: require("../public/productos/cap.png").default,
     alt: "cap",
-    precio: "56000",
+    precio: "56,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -38,7 +38,7 @@ export const PortafolioObjCuatro = {
     nombre: "JACKET",
     img: require("../public/productos/jacket.png").default,
     alt: "jacket",
-    precio: "875000",
+    precio: "875,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -49,7 +49,7 @@ export const PortafolioObjCinco = {
     nombre: "GABBAN",
     img: require("../public/productos/gaban.png").default,
     alt: "gaban",
-    precio: "690000",
+    precio: "690,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -60,7 +60,7 @@ export const PortafolioObjSeis = {
     nombre: "T-SHIRT3",
     img: require("../public/productos/t-shirt3.png").default,
     alt: "gaban",
-    precio: "40000",
+    precio: "40,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -71,7 +71,7 @@ export const PortafolioObjSiete = {
     nombre: "T-SHIRT4",
     img: require("../public/productos/t-shirt4.png").default,
     alt: "gaban",
-    precio: "94000",
+    precio: "94,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -82,7 +82,7 @@ export const PortafolioObjOcho = {
     nombre: "DRESS",
     img: require("../public/productos/vestido2.png").default,
     alt: "gaban",
-    precio: "460000",
+    precio: "460,000",
     hrefLink:"/", 
     ariaLabel:""
   };
@@ -93,7 +93,7 @@ export const PortafolioObjOcho = {
     nombre: "DRESS red",
     img: require("../public/productos/vestido-rojo.png").default,
     alt: "gaban",
-    precio: "950000",
+    precio: "950,000",
     hrefLink:"/", 
     ariaLabel:""
   };
