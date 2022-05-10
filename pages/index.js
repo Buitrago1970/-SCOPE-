@@ -1,5 +1,6 @@
-import SectionMainDescription from "../components/SectionMainDescription"
+// import SectionMainDescription from "../components/SectionMainDescription"
 import SectionShopProducts from "../components/SectionShopProducts"
+import SectionInfoProduct from "../components/SectionInfoProduct"
 import SectionShoppingCart from "../components/SectionShoppingCart"
 import NavBar from "../components/NavBar"
 
@@ -18,7 +19,8 @@ display: grid;
 export default function Home() {
   return (
     <StyledHome>
-      <SectionMainDescription />
+      {/* <SectionMainDescription /> */}
+      <SectionInfoProduct />
       <SectionShopProducts />
       <SectionShoppingCart />
       <NavBar />

@@ -6,18 +6,20 @@ background-color: #7A79A5;
 grid-area: SectionMainDescription; 
 color: #D5C4BA;
 `
+// header
 const StyledContainerHeaderMainDescription = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 15px 10px;
+`
+const StyledContainerTextHeaderMainDescription = styled.div`
 `
 const StyledContainerPrincipalTextMainDescription = styled.div`
 text-align: center;
 margin-bottom: 40px;
 `
 
-const StyledContainerTextHeaderMainDescription = styled.div`
-`
+
 const StyledContainerTextsMainDescription = styled.div`
     display: flex;
     justify-content: space-between;
