@@ -13,8 +13,8 @@ const GlobalStyle = createGlobalStyle`
     font-display: swap;
   } */
   body {
-    font-family: 'Cinzel', serif;
-    /* font-family: cooper-black-std, serif; */
+    /* font-family: 'Cinzel', serif; */
+    font-family: cooper-black-std, serif;
     font-weight: 700;
     margin: 0;
     padding: 0;

@@ -5,6 +5,7 @@ const StyledSectionShoppingCart = styled.div`
 background-color: #E1D9CE;
 border: 1px solid black;
 grid-area: SectionShoppingCart;
+font-family: 'Cinzel', serif;
 `
 const StyledShoppingCartMiniHeader = styled.div`
 border-bottom: 1px solid black;

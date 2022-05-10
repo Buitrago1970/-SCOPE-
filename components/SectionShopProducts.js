@@ -1,17 +1,38 @@
 import React from 'react'
 import styled from 'styled-components'
 import StyledCard from './0Products/StyledCard'
+import { PortafolioObjCinco, PortafolioObjCuatro, PortafolioObjDos, PortafolioObjNueve, PortafolioObjOcho, PortafolioObjSeis, PortafolioObjSiete, PortafolioObjTres, PortafolioObjUno } from '../datos/ProductosDatos'
 
 const StyledSectionShopProducts = styled.div`
-background-color: red;
-grid-area: SectionShopProducts;
+background-color: pink;
+display:flex;
+max-height:70vh;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    margin: 0 auto;
+    overflow: auto;
+}
 `
+
 
 export default function SectionShopProducts() {
     return (
         <StyledSectionShopProducts>
             {/* <StyledCard /> */}
-            hola we
+            <div className="container">
+                <StyledCard{...PortafolioObjUno} />
+                <StyledCard{...PortafolioObjDos} />
+                <StyledCard{...PortafolioObjTres} />
+                <StyledCard{...PortafolioObjCuatro} />
+                <StyledCard{...PortafolioObjCinco} />
+                <StyledCard{...PortafolioObjSeis} />
+                <StyledCard{...PortafolioObjSiete} />
+                <StyledCard{...PortafolioObjOcho} />
+                <StyledCard{...PortafolioObjNueve} />
+            </div>
         </StyledSectionShopProducts>
     )
 }
