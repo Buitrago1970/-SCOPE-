@@ -7,7 +7,7 @@ const StyledProduct = styled.div`
  /* width:290px; */
  width:30%;
  min-width:230px;
- height:50%;
+ height:48%;
  min-height:330px;
  background-color: ${({limited}) => limited ? '#E9DCCE' : '#1C1C1C'};
  /* margin:3px; */
