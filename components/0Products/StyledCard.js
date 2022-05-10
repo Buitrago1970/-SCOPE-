@@ -16,18 +16,18 @@ const StyledProduct = styled.div`
 
  .top{
    display:flex;
-   justify-content: ${({limited}) => limited ? 'space-between' : 'flex-end'};
+   justify-content: ${({ limited }) => limited ? 'space-between' : 'flex-end'};
    margin-left: 5px;
    margin-right: 5px;
    .limited-edition{
     position:relative;
-    display: ${({limited}) => limited ? 'flex' : 'none'};
+    display: ${({ limited }) => limited ? 'flex' : 'none'};
     flex-direction:column;
     width:15%;
     justify-content:center;
     
     h5{
-      color: ${({limited}) => limited ? '#000000' : '#D5C4BA'};
+      color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
       top:5px;
       width:5px;
       position:absolute;
@@ -45,7 +45,7 @@ const StyledProduct = styled.div`
     }
    }
    .size-product{
-    color: ${({limited}) => limited ? '#000000' : '#D5C4BA'};
+    color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
    }
  }
  .product-name{
@@ -53,11 +53,11 @@ const StyledProduct = styled.div`
    display:flex;
    justify-content:center;
    margin:0 auto;
-   color: ${({limited}) => limited ? '#000000' : '#D5C4BA'};
+   color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
    font-weight: 700;
    font-size: 15px;
  }`
- 
+
 const StyledImage = styled.div`
 cursor:pointer;
 display:flex;
@@ -71,24 +71,24 @@ display:flex;
   /* align-items:flex-end; */
    justify-content:space-around;
    margin:0 auto;
-   border-top:  ${({limited}) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
+   border-top:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
    margin-top:40px;
    padding-top:10px;
    font-size: 15px;
-   color: ${({limited}) => limited ? '#000000' : '#D5C4BA'};
+   color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
    .info, .buy{
     cursor:pointer;
      padding:0 10px;
-    border:  ${({limited}) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
+    border:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
    }
    /* .buy{
     cursor:pointer;
      padding:0 10px;
-    border:  ${({limited}) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
+    border:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
    } */
    `
 
-const StyledCard = ({id, limited, tallas,nombre,img,precio}) => {
+const StyledCard = ({ id, limited, tallas, nombre, img, precio }) => {
   return (
     <StyledProduct id={id} limited={limited}>
       <div className="top">
@@ -100,7 +100,7 @@ const StyledCard = ({id, limited, tallas,nombre,img,precio}) => {
       </div>
       <h3 className="product-name" limited={limited}>SCOPE {nombre}</h3>
       <StyledImage>
-       <Image className="img" src={img} alt="" width={210} height={210} objectFit="cover" />
+        <Image className="img" src={img} alt="" width={210} height={210} objectFit="cover" />
       </StyledImage>
       <StyledBottom limited={limited}>
         <div className="info">INFO</div>
