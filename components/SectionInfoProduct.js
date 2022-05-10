@@ -66,7 +66,7 @@ const StyledLimitedEditionNumberP = styled.p`
 const StyledContainerImagesProduct = styled.div`
      width: 100%;
      margin: auto;
-     overflow-x: scroll;
+     overflow-y: scroll;
     scroll-behavior: smooth;
     max-height: 25rem;
  `

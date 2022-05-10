@@ -6,7 +6,7 @@ const StyledFactura = styled.div`
  flex-direction:column;
  font-family: 'Cinzel', serif;
  width:100%;
- grid-area: SectionMainDescription; 
+ grid-area: Bill; 
  height:100vh;
  /* height:10; */
  justify-content:center;
@@ -72,37 +72,37 @@ const StyleDatos = styled.div`
  }`
 
 const Factura = () => {
-  return (
-    <StyledFactura>
-        <h1 className='companyName'> SCOPE</h1>
-        <StyleDatos>
-            <div className='dCliente'>
-            Invoice To
-                <h6 className='dcNombre'>Kahyn Kim</h6>
-                <h6 className='dcDir'>117, Jamwon-ro, Seocho-gu,</h6>
-                <h6 className='dcCiudad'>SOUL 06508</h6>
-                <h6 className='dcPhone'>phone: 010 3734 3174</h6>
-                <h6 className='dcMail'>E--mail: kahyun21@naver.com</h6>
-                
-            </div>
-            <div className='dPedido'>
-                <div className='infoPedido'>
-                    <h6 className='iTiempo'>Date of Order:</h6>
-                    <h6 className='iTiempo'>Order Number:</h6>
-                    <h6 className='iTiempo'>Pick List #:</h6>
-                    <h6 className='shipping-method'>FEDEX Priority Service</h6>
+    return (
+        <StyledFactura>
+            <h1 className='companyName'> SCOPE</h1>
+            <StyleDatos>
+                <div className='dCliente'>
+                    Invoice To
+                    <h6 className='dcNombre'>Kahyn Kim</h6>
+                    <h6 className='dcDir'>117, Jamwon-ro, Seocho-gu,</h6>
+                    <h6 className='dcCiudad'>SOUL 06508</h6>
+                    <h6 className='dcPhone'>phone: 010 3734 3174</h6>
+                    <h6 className='dcMail'>E--mail: kahyun21@naver.com</h6>
+
                 </div>
-                <div className='dataPedido'>
-                    <h6 className='dTiempo'>11/25/2020</h6>
-                    <h6 className='dTiempo'>12000161790</h6>
-                    <h6 className='dTiempo'>4793670</h6>
-                    
+                <div className='dPedido'>
+                    <div className='infoPedido'>
+                        <h6 className='iTiempo'>Date of Order:</h6>
+                        <h6 className='iTiempo'>Order Number:</h6>
+                        <h6 className='iTiempo'>Pick List #:</h6>
+                        <h6 className='shipping-method'>FEDEX Priority Service</h6>
+                    </div>
+                    <div className='dataPedido'>
+                        <h6 className='dTiempo'>11/25/2020</h6>
+                        <h6 className='dTiempo'>12000161790</h6>
+                        <h6 className='dTiempo'>4793670</h6>
+
+                    </div>
                 </div>
-            </div>
-            {/* <div className="shipping-method">FEDEX Priority Service</div> */}
-        </StyleDatos>
-    </StyledFactura>
-  )
+                {/* <div className="shipping-method">FEDEX Priority Service</div> */}
+            </StyleDatos>
+        </StyledFactura>
+    )
 }
 
 export default Factura
