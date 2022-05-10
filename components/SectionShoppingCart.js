@@ -12,6 +12,7 @@ border-bottom: 1px solid black;
 display: flex ;
 justify-content: space-between;
 padding-right: 15px;
+font-size: 12px;
 `
 const StyledShoppingCartMiniNavBar = styled.div`
 `
@@ -40,7 +41,7 @@ const StyledContainerItemShoppingCart = styled.div`
   grid-template-rows: 1fr; 
   gap: 0px 0px; 
   padding: 7px;
-  font-size: 15px;
+  font-size: 12px;
 `
 const StyledShoppingTotal = styled.div`
     display: flex;
