@@ -64,30 +64,28 @@ const StyledLimitedEditionNumberP = styled.p`
 `
 // images
 const StyledContainerImagesProduct = styled.div`
-    width: 100%;
-    margin: auto;
-    overflow-x: scroll;
-scroll-behavior: smooth;
-
-max-height: 25rem;
-`
+     width: 100%;
+     margin: auto;
+     overflow-x: scroll;
+    scroll-behavior: smooth;
+    max-height: 25rem;
+ `
 const StyledContainerImage = styled.div`
-width: 100%;
-margin: auto;
-border-bottom: 1px solid #D5C4BA;
-`
-// info-descriptio-product
+ width: 100%;
+ margin: auto;
+ border-bottom: 1px solid #D5C4BA;
+ `
+// info - descriptio - product
 const StyledContainerSectionInfoProduct = styled.div`
     border: 1px solid #D5C4BA;
     display: grid; 
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr; 
-    gap: 0px 0px; 
+    grid-template-rows: 1.2fr 0.8fr; 
+        gap: 0px 0px; 
     grid-template-areas: 
         "colorSize details"
         "PribeBuy details"; 
-        height: 42%;
 `
 const StyledContainerColorSize = styled.div`
     grid-area: colorSize;
@@ -130,6 +128,20 @@ const StyledBtnBuy = styled.button`
 `
 // select color size
 const StyledContainerSelectSize = styled.div`
+select{
+    background: none;
+    color: white;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 2px solid #e9dcce;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    display:inline-block;
+}
 
 `
 const StyledContainerSelectColor = styled.div`
@@ -211,18 +223,6 @@ export default function SectionInfoProduct() {
                     <StyledContainerImage>
                         <Image src={tshirt} alt='Logo' />
                     </StyledContainerImage>
-                    <StyledContainerImage>
-                        <Image src={tshirt} alt='Logo' />
-                    </StyledContainerImage>
-                    <StyledContainerImage>
-                        <Image src={tshirt} alt='Logo' />
-                    </StyledContainerImage>
-                    <StyledContainerImage>
-                        <Image src={tshirt} alt='Logo' />
-                    </StyledContainerImage>
-                    <StyledContainerImage>
-                        <Image src={tshirt} alt='Logo' />
-                    </StyledContainerImage>
                 </StyledContainerImagesProduct>
             </StyledcontainerSectionMainProduct>
             <StyledContainerSectionInfoProduct>
@@ -231,16 +231,27 @@ export default function SectionInfoProduct() {
                         <h3>
                             CHOOSE SIZE (CO)
                         </h3>
+                        <select name='color'>
+                            <option value='red'>
+                                Rojo
+                            </option>
+                            <option value='green'>
+                                Verde
+                            </option>
+                            <option>
+                                Gris
+                            </option>
+                        </select>
                     </StyledContainerSelectSize>
                     <StyledContainerSelectColor>
                         <StyledPSelectColor>COLOR</StyledPSelectColor>
                         <p>Blanco</p>
                     </StyledContainerSelectColor>
                     <StyledContainerColors>
-                        <StyledColor onClick={() => alert('Click Pendejo ')} />
-                        <StyledColor onClick={() => alert('Click Pendejo ')} />
-                        <StyledColor onClick={() => alert('Click Pendejo ')} />
-                        <StyledColor onClick={() => alert('Click Pendejo ')} />
+                        <StyledColor onClick={() => alert('Click :) ')} />
+                        <StyledColor onClick={() => alert('Click :) ')} />
+                        <StyledColor onClick={() => alert('Click :) ')} />
+                        <StyledColor onClick={() => alert('Click :) ')} />
 
                     </StyledContainerColors>
                 </StyledContainerColorSize>
@@ -248,7 +259,7 @@ export default function SectionInfoProduct() {
                     <h3>
                         $1ooo.ooo.oo
                     </h3>
-                    <StyledBtnBuy onClick={() => alert('Click Pendejo ')}>
+                    <StyledBtnBuy onClick={() => alert('Click :) ')}>
                         BUY
                     </StyledBtnBuy>
                 </StyledContainerPriceBuy>
@@ -256,6 +267,7 @@ export default function SectionInfoProduct() {
                     <h3>
                         PRODUCT DETAILS
                     </h3>
+
                     <StyledDetail>
                         • Full destroyed cotton and rubber<br />• Sneaker<br />• Rippings allover the fabr/ic<br />• Balenciaga logo printed at the edge of the toe<br />• Balenciaga graffiti logo in color contrast on sole <br />• Embossed size at back<br />• 8 eyelets lace-up vamp<br />• Vulcanized sole<br />• Made in China<br />• Wipe with a soft cloth
                     </StyledDetail>
