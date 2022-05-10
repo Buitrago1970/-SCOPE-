@@ -6,7 +6,7 @@ const StyledProduct = styled.div`
  font-family: 'Cinzel', serif;
  /* width:290px; */
  width:30%;
- min-width:230px;
+ min-width:217px;
  height:48%;
  min-height:330px;
  background-color: ${({limited}) => limited ? '#E9DCCE' : '#1C1C1C'};
