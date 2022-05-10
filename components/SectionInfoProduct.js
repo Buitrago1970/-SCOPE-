@@ -9,7 +9,8 @@ const StyledSectionMainDescriptionProduct = styled.div`
     background-color: black;
     color: #FFFFFF;
     grid-area: SectionMainDescription; 
-
+    
+    
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
