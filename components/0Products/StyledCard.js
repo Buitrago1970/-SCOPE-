@@ -4,11 +4,15 @@ import styled from 'styled-components'
 
 const StyledProduct = styled.div`
  font-family: 'Cinzel', serif;
- width:290px;
- height:339px;
+ /* width:290px; */
+ width:30%;
+ height:50%;
+ /* height:339px; */
  background-color: ${({ limited }) => limited ? '#E9DCCE' : '#1C1C1C'};
- margin:3px;
+ /* margin:3px; */
  border: 1px solid #000000;
+ margin-top:20px;
+
  .top{
    display:flex;
    justify-content: ${({ limited }) => limited ? 'space-between' : 'flex-end'};
