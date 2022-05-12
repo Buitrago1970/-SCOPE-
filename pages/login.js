@@ -5,6 +5,8 @@ import SectionShoppingCart from "../components/SectionShoppingCart"
 import NavBar from "../components/NavBar"
 import Bill from "../components/2Factura/Factura"
 import LoginComponent from "../components/login"
+import RegisterForm from "../components/2/SectionRegisterForm"
+import LoginForm from "../components/2/SectionLogin"
 
 
 import styled from 'styled-components'
@@ -24,12 +26,14 @@ height:100vh;
 `
 
 export default function Login() {
-    return (
-        <StyledHome>
-            <Bill />
-            <LoginComponent />
-            <SectionShoppingCart />
-            <NavBar />
-        </StyledHome>
-    )
+  return (
+    <StyledHome>
+      <Bill />
+      <LoginForm />
+      {/* <LoginComponent /> */}
+      {/* <RegisterForm /> */}
+      <SectionShoppingCart />
+      <NavBar />
+    </StyledHome>
+  )
 }

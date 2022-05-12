@@ -72,7 +72,7 @@ export default function login() {
             </StyledContainerHeaderMainDescription>
             <StyledContainerLogin>
                 <StyledContainerLoginBtnTitle>
-                    <h1>Hola,Identificate</h1>
+                    <h1>Hola, Identificate</h1>
                 </StyledContainerLoginBtnTitle>
                 <StyledContainerLoginBtnTitle>
                     <button className='btn-login'>

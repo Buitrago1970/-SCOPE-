@@ -142,6 +142,10 @@ select{
     box-shadow: none;
     display:inline-block;
 }
+option:focus{
+    outline: none;
+
+}
 
 `
 const StyledContainerSelectColor = styled.div`
