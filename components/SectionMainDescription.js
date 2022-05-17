@@ -1,10 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { device } from '../device/device';
+
 const StyledSectionMainDescription = styled.div`
-background-color: #7A79A5;
-grid-area: SectionMainDescription; 
-color: #D5C4BA;
+    background-color: #7A79A5;
+    grid-area: SectionMainDescription; 
+    color: #D5C4BA;
+        @media ${device.tablet} { 
+            height: 45rem;
+            }
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
@@ -18,6 +23,9 @@ const StyledContainerTextHeaderMainDescription = styled.div`
 const StyledContainerPrincipalTextMainDescription = styled.div`
 text-align: center;
 margin-bottom: 40px;
+@media ${device.mobileL} { 
+    margin-bottom: 25px;
+            }
 `
 
 const StyledContainerTextsMainDescription = styled.div`
@@ -31,6 +39,11 @@ const StyledContainerTextAttributes = styled.div`
 const StyledTextAttributes = styled.div`
     padding-left: 20px;
     font-size: 15px;
+    @media ${device.mobileL} { 
+        font-size: 13px;
+    padding-left: 5px;
+
+        }
 `
 const StyledContainerDescriptioTextMainDescription = styled.div`
     text-align: center;
@@ -38,10 +51,16 @@ const StyledContainerDescriptioTextMainDescription = styled.div`
 `
 const StyledContainerTextsAttributes = styled.div`
     border-bottom: 1px solid;
+    @media ${device.mobileL} { 
+        padding: 5px 0;
+            }
 `
 const StyledPrincipalText = styled.h1`
     font-size: 60px;
     margin: 0;
+    @media ${device.mobileL} { 
+    font-size: 45px;
+            }
 `
 const StyledHeaderP = styled.p`
     margin: 0;  
