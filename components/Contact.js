@@ -25,6 +25,7 @@ const StyledContactCard = styled.div`
   border-radius: 4px;
   font-size: 14px;
 `
+
 const StyledContactHeader = styled.div`
 display: grid;
 grid-template-columns: 1fr 1fr;
