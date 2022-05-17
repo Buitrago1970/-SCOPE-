@@ -5,13 +5,13 @@ const StyledSectionMainDescription = styled.div`
 background-color: #7A79A5;
 grid-area: SectionMainDescription; 
 color: #D5C4BA;
-height:100vh;
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
 display: flex;
 justify-content: space-between;
 margin: 15px 10px;
+font-size: 10px;
 `
 const StyledContainerTextHeaderMainDescription = styled.div`
 `
@@ -34,27 +34,17 @@ const StyledTextAttributes = styled.div`
 `
 const StyledContainerDescriptioTextMainDescription = styled.div`
     text-align: center;
+    
 `
 const StyledContainerTextsAttributes = styled.div`
     border-bottom: 1px solid;
 `
 const StyledPrincipalText = styled.h1`
-    font-size: 70px;
+    font-size: 60px;
     margin: 0;
 `
 const StyledHeaderP = styled.p`
     margin: 0;  
-`
-const StyledContainerDescriptioText = styled.div`
-width:100%;
-margin-top:25px;
-`
-const StyledTextDescriptionMain = styled.p`
-font-size: 30px;
-overflow-y: scroll;
-    scroll-behavior: smooth;
-    max-height: 8.5rem;
-margin: 0;
 `
 
 export default function SectionMainDescription() {
@@ -101,11 +91,7 @@ export default function SectionMainDescription() {
                 </StyledContainerTextAttributes>
             </StyledContainerTextsMainDescription>
             <StyledContainerDescriptioTextMainDescription>
-                <StyledContainerDescriptioText>
-                    <StyledTextDescriptionMain>
-                        Amorphous is a rising DJ that blew up overnight after going viral time and time again for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience
-                    </StyledTextDescriptionMain>
-                </StyledContainerDescriptioText>
+                Amorphous is a rising DJ that blew up overnight after going viral time and time again for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience
             </StyledContainerDescriptioTextMainDescription>
 
         </StyledSectionMainDescription>

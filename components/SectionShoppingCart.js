@@ -22,7 +22,6 @@ display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr; 
   gap: 0px 0px; 
   text-align: center;
-  margin: 10px 30px;
 `
 const StyledContainerPShoppingCart = styled.div`
 border-right: 1px solid black;
@@ -34,8 +33,6 @@ display: flex;
 justify-content: center;
 text-align: center;
 border-bottom: 1px solid black;
-margin: 0px 20px;
-padding: 5px 0;
 `
 const StyledContainerItemShoppingCart = styled.div`
      display: flex;
@@ -48,7 +45,6 @@ const StyledShoppingTotal = styled.div`
     height: 27px;
     justify-content: flex-end;
     align-items: center;
-    margin: 10px 20px;
     border-top: 1px solid;
 `
 const StyledContainerPTotalShoppingCart = styled.div`
