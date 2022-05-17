@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
 
+import { device } from '../device/device';
+
+
 // import imgPrueba from '../../public/productos/cap.png'
 
 const StyledSectionContact = styled.div`
@@ -10,6 +13,10 @@ const StyledSectionContact = styled.div`
     color: #FFFFFF;
     display: flex;
     align-items: center;
+    @media ${device.tablet} { 
+        grid-area: SectionMainDescription; 
+        height: 40rem;
+    }
 `
 const StyledContactCard = styled.div`
  display: grid; 

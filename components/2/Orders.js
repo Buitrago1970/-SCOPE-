@@ -2,32 +2,42 @@ import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
 
+import { device } from '../../device/device';
 import imgPrueba from '../../public/productos/cap.png'
+
 
 const StyledSectionOrders = styled.div`
     grid-area: SectionShopProducts; 
     background-color: black;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-height: 37rem;
     .Container-title-order{
         text-align: center;
         color: #ffff;
     }
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    max-height: 37rem;
-    
+     @media ${device.tablet} { 
+        grid-area: SectionMainDescription; 
+        height: 40rem;
+    }
 `
 const StyledContainerOrder = styled.div`
 `
 const StyledOrder = styled.div`
-font-family: Inter;
-font-size: 14px;
-
- display: grid; 
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr; 
-  grid-template-rows: 0.1fr 1.9fr; 
-  border: 3px solid white;
-  margin: 20px;
+    font-family: Inter;
+    font-size: 14px;
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 0.1fr 1.9fr; 
+    border: 3px solid white;
+    margin: 20px;
+    @media ${device.tablet} { 
+        margin: 20px 10px;
+        }
+        @media ${device.mobileL} { 
+        font-size: 9px;
+        }
 `
 const StyledHeaderInfoOrder = styled.div`
 display: flex;
@@ -58,7 +68,25 @@ const StyledOrderInfo = styled.div`
         }
         .btn-order:hover{
             border: 2px solid white;
-
+        }
+        @media ${device.tablet} { 
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            gap: 0px 0px; 
+            grid-template-areas: 
+                "img info"
+                "img btn"; 
+                .container-img-order{
+                    grid-area: img;
+                }
+    }
+    @media ${device.mobileL} { 
+        .btn-order{
+            width: 90px;
+            height: 25px;
+            font-size: 10px;
+        }
         }
 `
 const StyledInfoOrder = styled.div`
@@ -71,6 +99,10 @@ const StyledInfoOrder = styled.div`
     }
     .uni-color-order{
         display: flex;
+    }
+    @media ${device.tablet} { 
+        grid-area: info;
+
     }
 `
 export default function Orders() {

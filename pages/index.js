@@ -2,6 +2,7 @@ import SectionMainDescription from "../components/SectionMainDescription"
 import SectionShopProducts from "../components/SectionShopProducts"
 import SectionInfoProduct from "../components/SectionInfoProduct"
 import SectionShoppingCart from "../components/SectionShoppingCart"
+import Bill from "../components/2Factura/Factura"
 import Contact from "../components/Contact"
 import Orders from "../components/2/Orders"
 import NavBar from "../components/NavBar"
@@ -36,9 +37,9 @@ export default function Home() {
     <StyledHome>
       {/* <SectionMainDescription /> */}
       {/* <SectionInfoProduct /> */}
-      <SectionShopProducts />
+      {/* <SectionShopProducts /> */}
       {/* <Orders /> */}
-      {/* <Contact /> */}
+      <Contact />
       <SectionShoppingCart />
       {/* <NavBar /> */}
     </StyledHome>
