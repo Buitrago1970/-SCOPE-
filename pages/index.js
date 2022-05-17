@@ -28,15 +28,14 @@ const StyledHome = styled.div`
     "SectionMainDescription"
     "SectionShopProducts"
     "SectionShoppingCart"; 
-        
-      }
+  }
   `
 
 export default function Home() {
   return (
     <StyledHome>
       {/* <SectionMainDescription /> */}
-      <SectionInfoProduct />
+      {/* <SectionInfoProduct /> */}
       <SectionShopProducts />
       {/* <Orders /> */}
       {/* <Contact /> */}

@@ -2,11 +2,18 @@ import React from 'react'
 import Image from 'next/image'
 import styled from 'styled-components'
 
+import { device } from '../../device/device';
+
+
 // import colombia from '../public/productos/jacket.png'
 // principal container
 const StyledSectionRegisterForm = styled.div`
 background-color: black;
 color: #FFFFFF;
+@media ${device.tablet} { 
+height: 33rem;
+   
+  }
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
