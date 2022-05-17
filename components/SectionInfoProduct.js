@@ -3,6 +3,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Image from 'next/image'
 import tshirt from '../public/productos/jacket.png'
+import { device } from '../device/device';
+
 
 
 const StyledSectionMainDescriptionProduct = styled.div`
@@ -38,11 +40,18 @@ const StyledContainerInfoTextProductName = styled.div`
         "limited-edition name QuienSabe";
         padding: 10px;
         padding-bottom: 0;
+
 `
 const StyledContainerNameProduct = styled.div`
     text-align: center;
     grid-area: name;
     font-family: cooper-black-std, serif;
+    @media ${device.mobileL} { 
+        h1{
+            margin: 2px;
+            font-size: 20px;
+        }
+      }
 `
 const StyledContainerLimitedEdition = styled.div`
     grid-area: limited-edition;
@@ -53,6 +62,9 @@ const StyledContainerLimitedEdition = styled.div`
     align-items: center;
     justify-content: center;
     max-width: 60px;
+    @media ${device.mobileL} { 
+        font-size: 8px;
+    }
 `
 const StyledLimitedEditionP = styled.p`
     margin: 0;
@@ -86,16 +98,41 @@ const StyledContainerSectionInfoProduct = styled.div`
     grid-template-areas: 
         "colorSize details"
         "PribeBuy details"; 
+        @media ${device.tablet} { 
+            grid-auto-columns: 1fr; 
+            grid-template-columns: 1fr 1fr; 
+            grid-template-rows: 1fr 1fr; 
+            grid-template-areas: 
+                "colorSize details"
+                "PribeBuy PribeBuy"; 
+      }
+      @media ${device.mobileL} { 
+        grid-auto-columns: 1fr; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-areas: 
+            "colorSize"
+            "details"
+            "PribeBuy"; 
+      }
+
+
 `
 const StyledContainerColorSize = styled.div`
     grid-area: colorSize;
     padding: 15px;
     border-right: 1px solid #D5C4BA;
+    @media ${device.mobileL} { 
+        border-right: 1px solid #D5C4BA;
+        border-bottom: 1px solid #D5C4BA;
+        border-left: 1px solid #D5C4BA; 
+      }
 `
 const StyledContainerPriceBuy = styled.div`
     grid-area: PribeBuy;
     border-top: 1px solid #D5C4BA;
-    border-right: 1px solid #D5C4BA;text-align: center;
+    border-right: 1px solid #D5C4BA;
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,6 +140,10 @@ const StyledContainerPriceBuy = styled.div`
     h3{
         margin-bottom: 15px;
     }
+    @media ${device.mobileL} { 
+        border-bottom: 1px solid #D5C4BA;
+        border-left: 1px solid #D5C4BA; 
+      }
 `
 const StyledContainerDetails = styled.div`
     grid-area: details;
@@ -111,6 +152,10 @@ const StyledContainerDetails = styled.div`
     h3{
         margin: 15px;
     }
+    @media ${device.mobileL} { 
+        border-right: 1px solid #D5C4BA;
+        border-left: 1px solid #D5C4BA; 
+      }
 `
 const StyledDetail = styled.div`
     font-size: 12px;
@@ -125,28 +170,31 @@ const StyledBtnBuy = styled.button`
     height: 50px;
     font-size: 15px;
     cursor: pointer;
+    :hover{
+        border: 2px solid #FFFFFF;
+    
+    }
 `
 // select color size
 const StyledContainerSelectSize = styled.div`
-select{
-    background: none;
-    color: white;
-    width: 100%;
-    height: 30px;
-    margin: 15px 0;
-    border: 2px solid #e9dcce;
-    border-radius: 0;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
-    display:inline-block;
-}
-option:focus{
-    outline: none;
+    select{
+        background: none;
+        color: white;
+        width: 100%;
+        height: 30px;
+        margin: 15px 0;
+        border: 2px solid #e9dcce;
+        border-radius: 0;
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        display:inline-block;
+    }
+    option:focus{
+        outline: none;
 
-}
-
+    } 
 `
 const StyledContainerSelectColor = styled.div`
     display: flex;
