@@ -7,7 +7,7 @@ const StyledFactura = styled.div`
  flex-direction:column;
  font-family: 'Cinzel', serif;
  width:100%;
- grid-area: SectionMainDescription; 
+ grid-area: Bill; 
  height:100vh;
  /* height:10; */
  /* justify-content:center; */

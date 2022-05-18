@@ -1,17 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import { device } from '../device/device';
+
 const StyledSectionShoppingCart = styled.div`
 background-color: #E1D9CE;
 border: 1px solid black;
 grid-area: SectionShoppingCart;
 font-family: 'Cinzel', serif;
+    @media ${device.tablet} { 
+        height: 12rem;
+        position: sticky;
+        z-index: 10;
+            }
 `
 const StyledShoppingCartMiniHeader = styled.div`
 border-bottom: 1px solid black;
 display: flex ;
 justify-content: space-between;
 padding-right: 15px;
+font-size: 12px;
 `
 const StyledShoppingCartMiniNavBar = styled.div`
 `
@@ -21,6 +29,10 @@ display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr; 
   gap: 0px 0px; 
   text-align: center;
+  @media ${device.tablet} { 
+  grid-template-rows: 1fr 1fr
+      
+            }
 `
 const StyledContainerPShoppingCart = styled.div`
 border-right: 1px solid black;
@@ -32,23 +44,22 @@ display: flex;
 justify-content: center;
 text-align: center;
 border-bottom: 1px solid black;
-margin: 0px 20px;
 `
 const StyledContainerItemShoppingCart = styled.div`
-  display: grid; 
-  grid-template-columns: 1fr 1fr 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  padding: 7px;
-  font-size: 15px;
+     display: flex;
+    padding: 7px;
+    font-size: 12px;
+    justify-content: space-between;
 `
 const StyledShoppingTotal = styled.div`
     display: flex;
     height: 27px;
     justify-content: flex-end;
     align-items: center;
-    margin: 10px 20px;
     border-top: 1px solid;
+    @media ${device.tablet} { 
+       justify-content: center;
+            }
 `
 const StyledContainerPTotalShoppingCart = styled.div`
 width: 20%;
@@ -69,7 +80,7 @@ export default function SectionShoppingCart() {
             <StyledShoppingCartMiniNavBar>
                 <StyledContainerShoppingCartNavbar>
                     <StyledP>
-                        Resumen CARRITO
+                        Resumen Carrito 🛒
                     </StyledP>
                 </StyledContainerShoppingCartNavbar>
             </StyledShoppingCartMiniNavBar>
