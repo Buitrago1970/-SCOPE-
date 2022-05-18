@@ -9,6 +9,7 @@ const StyledProduct = styled.div`
  min-width:217px;
  height:48%;
  min-height:330px;
+ max-height:330px;
  background-color: ${({limited}) => limited ? '#E9DCCE' : '#1C1C1C'};
  /* margin:3px; */
  border: 1px solid #000000;
