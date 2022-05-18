@@ -11,7 +11,7 @@ const StyledSectionOrders = styled.div`
     background-color: black;
     overflow-y: scroll;
     scroll-behavior: smooth;
-    max-height: 37rem;
+    max-height: 75vh;
     .Container-title-order{
         text-align: center;
         color: #ffff;
@@ -22,6 +22,9 @@ const StyledSectionOrders = styled.div`
     }
 `
 const StyledContainerOrder = styled.div`
+    .ontainer-title-order{
+        margin: 20px;
+    }
 `
 const StyledOrder = styled.div`
     font-family: Inter;
@@ -42,9 +45,13 @@ const StyledOrder = styled.div`
 const StyledHeaderInfoOrder = styled.div`
 display: flex;
 justify-content: space-between;
+align-items: center;
 border-bottom: 3px solid white;
 color: #BFBFBF;
 padding: 0 15px;
+    .p-info-header-order{
+        max-width: 100px;
+    }
 `
 const StyledContainerStatus = styled.div`
 color: #66FD20;

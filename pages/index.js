@@ -40,16 +40,23 @@ const StyledHome = styled.div`
 export default function Home() {
   return (
     <StyledHome>
+      {/* ------ [ 1 ] ------ */}
       {/* <SectionMainDescription /> */}
-      <SectionInfoProduct />
-      {/* <Factura /> */}
-      <SectionShopProducts />
-      <SectionShoppingCart />
+      {/* <SectionInfoProduct /> */}
+      <Factura />
+
+      {/* ------ [ 2 ] ------ */}
+
+      {/* <SectionShopProducts /> */}
       {/* <PayForm /> */}
       {/* <ConfirmOrder /> */}
-      {/* <Contact /> */}
-      <NavBar />
       {/* <Orders /> */}
+      <Contact />
+
+      {/* ------ [ 3 ] ------ */}
+      <SectionShoppingCart />
+
+      <NavBar />
     </StyledHome>
   )
 }

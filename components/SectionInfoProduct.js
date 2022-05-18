@@ -12,7 +12,7 @@ const StyledSectionMainDescriptionProduct = styled.div`
     color: #FFFFFF;
     grid-area: SectionMainDescription; 
     font-family: 'Cinzel', serif;
-    height: 100%;
+    height: 100vh;
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
@@ -80,7 +80,7 @@ const StyledContainerImagesProduct = styled.div`
      margin: auto;
      overflow-y: scroll;
     scroll-behavior: smooth;
-    max-height: 25rem;
+    max-height: 27rem;
  `
 const StyledContainerImage = styled.div`
  width: 100%;

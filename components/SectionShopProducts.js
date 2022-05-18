@@ -9,7 +9,7 @@ import { device } from '../device/device';
 const StyledSectionShopProducts = styled.div`
 background-color: pink;
 display:flex;
-max-height:70vh;
+height:75vh;
 grid-area: SectionShopProducts;
 @media ${device.tablet} { 
     height: 100rem;

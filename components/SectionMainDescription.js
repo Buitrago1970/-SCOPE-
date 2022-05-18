@@ -7,6 +7,7 @@ const StyledSectionMainDescription = styled.div`
     background-color: #7A79A5;
     grid-area: SectionMainDescription; 
     color: #D5C4BA;
+    height: 100vh;
         @media ${device.tablet} { 
             height: 45rem;
             }
