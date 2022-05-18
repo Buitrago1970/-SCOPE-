@@ -6,7 +6,7 @@ import { PortafolioObjCinco, PortafolioObjCuatro, PortafolioObjDos, PortafolioOb
 const StyledSectionShopProducts = styled.div`
 background-color: pink;
 display:flex;
-max-height:73vh;
+max-height:70vh;
 grid-area: SectionShopProducts;
 .container{
     display: flex;

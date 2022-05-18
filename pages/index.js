@@ -1,4 +1,4 @@
-// import SectionMainDescription from "../components/SectionMainDescription"
+import SectionMainDescription from "../components/SectionMainDescription"
 import SectionShopProducts from "../components/SectionShopProducts"
 import SectionInfoProduct from "../components/SectionInfoProduct"
 import SectionShoppingCart from "../components/SectionShoppingCart"
@@ -6,6 +6,9 @@ import NavBar from "../components/NavBar"
 
 
 import styled from 'styled-components'
+import Factura from "../components/2Factura/Factura"
+import PayForm from "../components/3PayForm/0PayForm"
+import ConfirmOrder from "../components/4Success/ConfirmOrder"
 
 const StyledHome = styled.div`
 display: grid; 
@@ -17,7 +20,7 @@ height:100vh;
   grid-template-areas: 
     "SectionMainDescription SectionShopProducts NavBar"
     "SectionMainDescription SectionShoppingCart NavBar"; 
-  h1,h2,h3,h4,h5,h6{
+  h1,h2,h3,h4,h5,h6,p{
     margin:0;
   }
   `
@@ -25,9 +28,12 @@ export default function Home() {
   return (
     <StyledHome>
       {/* <SectionMainDescription /> */}
-      <SectionInfoProduct />
-      <SectionShopProducts />
+      {/* <SectionInfoProduct /> */}
+      <Factura />
+      {/* <SectionShopProducts /> */}
       <SectionShoppingCart />
+      {/* <PayForm /> */}
+      <ConfirmOrder />
       <NavBar />
     </StyledHome>
   )
