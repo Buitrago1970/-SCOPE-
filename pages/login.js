@@ -42,9 +42,9 @@ export default function Login() {
   return (
     <StyledHome>
       <Bill />
-      {/* <LoginForm /> */}
+      <LoginForm />
       {/* <LoginComponent /> */}
-      <RegisterForm />
+      {/* <RegisterForm /> */}
       <SectionShoppingCart />
       {/* <NavBar /> */}
     </StyledHome>
