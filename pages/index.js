@@ -41,17 +41,17 @@ export default function Home() {
   return (
     <StyledHome>
       {/* ------ [ 1 ] ------ */}
-      {/* <SectionMainDescription /> */}
+      <SectionMainDescription />
       {/* <SectionInfoProduct /> */}
-      <Factura />
+      {/* <Factura /> */}
 
       {/* ------ [ 2 ] ------ */}
 
-      {/* <SectionShopProducts /> */}
+      <SectionShopProducts />
       {/* <PayForm /> */}
       {/* <ConfirmOrder /> */}
       {/* <Orders /> */}
-      <Contact />
+      {/* <Contact /> */}
 
       {/* ------ [ 3 ] ------ */}
       <SectionShoppingCart />

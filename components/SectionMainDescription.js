@@ -48,7 +48,10 @@ const StyledTextAttributes = styled.div`
 `
 const StyledContainerDescriptioTextMainDescription = styled.div`
     text-align: center;
-    
+    font-size: 30px;
+    max-height: 29vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 `
 const StyledContainerTextsAttributes = styled.div`
     border-bottom: 1px solid;
