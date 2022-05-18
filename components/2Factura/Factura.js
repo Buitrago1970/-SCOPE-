@@ -56,8 +56,8 @@ const StyleDatos = styled.div`
     line-height: 25px;
     display: grid;
     width:50%;
-    grid-template-columns: repeat(5, 1fr)
-    grid-template-rows: repeat(5, 1fr);
+    /* grid-template-columns: repeat(5, 1fr) */
+    /* grid-template-rows: repeat(5, 1fr); */
     /* grid-column-gap: 200px; */
     /* grid-row-gap: 0px; */
     
