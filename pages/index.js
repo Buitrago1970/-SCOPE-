@@ -2,7 +2,6 @@ import SectionMainDescription from "../components/SectionMainDescription"
 import SectionShopProducts from "../components/SectionShopProducts"
 import SectionInfoProduct from "../components/SectionInfoProduct"
 import SectionShoppingCart from "../components/SectionShoppingCart"
-import Bill from "../components/2Factura/Factura"
 import Contact from "../components/Contact"
 import Orders from "../components/2/Orders"
 import NavBar from "../components/NavBar"
@@ -10,6 +9,9 @@ import NavBar from "../components/NavBar"
 import { device } from '../device/device';
 
 import styled from 'styled-components'
+import Factura from "../components/2Factura/Factura"
+import PayForm from "../components/3PayForm/0PayForm"
+import ConfirmOrder from "../components/4Success/ConfirmOrder"
 
 const StyledHome = styled.div`
   display: grid; 
@@ -19,6 +21,9 @@ const StyledHome = styled.div`
   grid-template-areas: 
     "SectionMainDescription SectionShopProducts NavBar"
     "SectionMainDescription SectionShoppingCart NavBar"; 
+  h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+  }
     @media ${device.tablet} { 
     height: 80rem;
     grid-auto-columns: 1fr; 
@@ -35,12 +40,13 @@ const StyledHome = styled.div`
 export default function Home() {
   return (
     <StyledHome>
-      <SectionMainDescription />
+      {/* <SectionMainDescription /> */}
       {/* <SectionInfoProduct /> */}
+      <Factura />
       {/* <SectionShopProducts /> */}
-      <Orders />
-      {/* <Contact /> */}
       <SectionShoppingCart />
+      {/* <PayForm /> */}
+      <ConfirmOrder />
       {/* <NavBar /> */}
     </StyledHome>
   )
