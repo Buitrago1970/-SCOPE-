@@ -4,53 +4,41 @@ import styled from 'styled-components'
 
 const StyledProduct = styled.div`
  font-family: 'Cinzel', serif;
- /* width:290px; */
- width:30%;
- min-width:217px;
- height:48%;
- min-height:330px;
- max-height:330px;
- background-color: ${({limited}) => limited ? '#E9DCCE' : '#1C1C1C'};
- /* margin:3px; */
- border: 1px solid #000000;
+ /* font-family: 'Inter'; */
+ background-image: linear-gradient(to right, #8e2de263, #4a00e07d);
+
+ /* background-image: linear-gradient(to right, #fc5c7d94, #6a82fbc9); */
+ border: 1px solid #d5c4ba;
  margin-top:20px;
+ width: 14rem;
+ height: 20rem;
+ padding: 5px;
 
  .top{
    display:flex;
    justify-content: ${({ limited }) => limited ? 'space-between' : 'flex-end'};
-   margin-left: 5px;
-   margin-right: 5px;
    .limited-edition{
-    position:relative;
     display: ${({ limited }) => limited ? 'flex' : 'none'};
     flex-direction:column;
     width:15%;
     justify-content:center;
+    font-size: 8px;
+    align-items: center;
     
-    h5{
+    .limited-edition-p{
       color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
-      top:5px;
-      width:5px;
-      position:absolute;
-      font-size: 10px;
-      margin: 0;
     }
-    h6{
-      
-      top:30px;
-      position:relative;
-      color: red;
-      margin: 0;
-      align-items:center;
-      text-align:center;
+    .limited-edition-p-number{
+      color: #FF0000;
     }
    }
    .size-product{
     color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
+    font-size: 10px;
+    min-height: 33px;
    }
  }
  .product-name{
-   
    display:flex;
    justify-content:center;
    margin:0 auto;
@@ -67,13 +55,12 @@ display:flex;
    margin:0 auto;
    `
 const StyledBottom = styled.div`
-width:90%;
-display:flex;
-  /* align-items:flex-end; */
+
+  display:flex;
    justify-content:space-around;
    margin:0 auto;
    border-top:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
-   margin-top:40px;
+   margin-top:10px;
    padding-top:10px;
    font-size: 15px;
    color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
@@ -82,11 +69,13 @@ display:flex;
      padding:0 10px;
     border:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
    }
-   /* .buy{
-    cursor:pointer;
-     padding:0 10px;
-    border:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
-   } */
+   .price{
+    font-size: 15px;
+    display: flex;
+    /* font-family: 'Inter'; */
+    align-items: center;
+   }
+
    `
 
 const StyledCard = ({ id, limited, tallas, nombre, img, precio }) => {
@@ -94,10 +83,10 @@ const StyledCard = ({ id, limited, tallas, nombre, img, precio }) => {
     <StyledProduct id={id} limited={limited}>
       <div className="top">
         <div className="limited-edition">
-          <h5>Limited Edition</h5>
-          <h6>7/8</h6>
+          <p className='limited-edition-p'>Limited Edition</p>
+          <p className='limited-edition-p-number'>7/8</p>
         </div>
-        <h5 className="size-product" limited={limited}>{tallas.join("/")}</h5>
+        <p className="size-product" limited={limited}>{tallas.join("/")}</p>
       </div>
       <h3 className="product-name" limited={limited}>SCOPE {nombre}</h3>
       <StyledImage>

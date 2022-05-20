@@ -7,9 +7,13 @@ import { device } from '../device/device';
 
 
 const StyledSectionShopProducts = styled.div`
-background-color: pink;
+background-image: url("https://i.pinimg.com/564x/90/a2/eb/90a2eb6e6ba3f27ce03b1d62241c30c4.jpg");
+background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 display:flex;
-height:75vh;
+
+height:100vh;
 grid-area: SectionShopProducts;
 @media ${device.tablet} { 
     height: 100rem;

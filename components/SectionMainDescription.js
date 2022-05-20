@@ -47,11 +47,14 @@ const StyledTextAttributes = styled.div`
         }
 `
 const StyledContainerDescriptioTextMainDescription = styled.div`
-    text-align: center;
-    font-size: 30px;
-    max-height: 29vh;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+max-height: 27%;
+    p{
+        text-align: center;
+        font-size: 30px;
+        max-height: 120px;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
 `
 const StyledContainerTextsAttributes = styled.div`
     border-bottom: 1px solid;
@@ -114,7 +117,8 @@ export default function SectionMainDescription() {
                 </StyledContainerTextAttributes>
             </StyledContainerTextsMainDescription>
             <StyledContainerDescriptioTextMainDescription>
-                Amorphous is a rising DJ that blew up overnight after going viral time and time again for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience
+                <p>                Amorphous is a rising DJ that blew up overnight after going viral time and time again for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience
+                </p>
             </StyledContainerDescriptioTextMainDescription>
 
         </StyledSectionMainDescription>

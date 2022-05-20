@@ -15,8 +15,8 @@ import ConfirmOrder from "../components/4Success/ConfirmOrder"
 
 const StyledHome = styled.div`
   display: grid; 
-  grid-template-columns: 1.4fr 1.6fr 0.01fr; 
-  grid-template-rows: 1.5fr 0.5fr; 
+  grid-template-columns: 1.2fr 1.8fr 0.07fr; 
+  grid-template-rows: 1fr ; 
   gap: 0px 0px; 
   grid-template-areas: 
     "SectionMainDescription SectionShopProducts NavBar"
@@ -41,8 +41,8 @@ export default function Home() {
   return (
     <StyledHome>
       {/* ------ [ 1 ] ------ */}
-      <SectionMainDescription />
-      {/* <SectionInfoProduct /> */}
+      {/* <SectionMainDescription /> */}
+      <SectionInfoProduct />
       {/* <Factura /> */}
 
       {/* ------ [ 2 ] ------ */}
@@ -54,7 +54,7 @@ export default function Home() {
       {/* <Contact /> */}
 
       {/* ------ [ 3 ] ------ */}
-      <SectionShoppingCart />
+      {/* <SectionShoppingCart /> */}
 
       <NavBar />
     </StyledHome>
