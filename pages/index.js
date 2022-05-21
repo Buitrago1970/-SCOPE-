@@ -1,17 +1,21 @@
+{/* ------ [ 1 ] ------ */ }
 import SectionMainDescription from "../components/SectionMainDescription"
-import SectionShopProducts from "../components/SectionShopProducts"
 import SectionInfoProduct from "../components/SectionInfoProduct"
+import Factura from "../components/2Factura/Factura"
+
+{/* ------ [ 2 ] ------ */ }
+
+import SectionShopProducts from "../components/SectionShopProducts"
 import SectionShoppingCart from "../components/SectionShoppingCart"
 import Contact from "../components/Contact"
-import Orders from "../components/2/Orders"
+{/* ------ [ 3 ] ------ */ }
 import NavBar from "../components/NavBar"
 
 import { device } from '../device/device';
-
 import styled from 'styled-components'
-import Factura from "../components/2Factura/Factura"
-import PayForm from "../components/3PayForm/0PayForm"
-import ConfirmOrder from "../components/4Success/ConfirmOrder"
+
+
+
 
 const StyledHome = styled.div`
   display: grid; 
@@ -42,15 +46,12 @@ export default function Home() {
     <StyledHome>
       {/* ------ [ 1 ] ------ */}
       {/* <SectionMainDescription /> */}
-      <SectionInfoProduct />
-      {/* <Factura /> */}
+      {/* <SectionInfoProduct /> */}
+      <Factura />
 
       {/* ------ [ 2 ] ------ */}
 
       <SectionShopProducts />
-      {/* <PayForm /> */}
-      {/* <ConfirmOrder /> */}
-      {/* <Orders /> */}
       {/* <Contact /> */}
 
       {/* ------ [ 3 ] ------ */}
