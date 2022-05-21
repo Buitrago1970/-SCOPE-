@@ -46,8 +46,8 @@ export default function Home() {
     <StyledHome>
       {/* ------ [ 1 ] ------ */}
       {/* <SectionMainDescription /> */}
-      {/* <SectionInfoProduct /> */}
-      <Factura />
+      <SectionInfoProduct />
+      {/* <Factura /> */}
 
       {/* ------ [ 2 ] ------ */}
 

@@ -13,7 +13,7 @@ const StyledSectionContact = styled.div`
     color: #FFFFFF;
     display: flex;
     align-items: center;
-    height: 75vh;
+    height: 100vh;
     @media ${device.tablet} { 
         grid-area: SectionMainDescription; 
         height: 40rem;

@@ -80,12 +80,12 @@ const StyledContainerImagesProduct = styled.div`
      margin: auto;
      overflow-y: scroll;
     scroll-behavior: smooth;
-    max-height: 27rem;
+    max-height: 25rem;
  `
 const StyledContainerImage = styled.div`
- width: 100%;
- margin: auto;
- border-bottom: 1px solid #D5C4BA;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #D5C4BA;
  `
 // info - descriptio - product
 const StyledContainerSectionInfoProduct = styled.div`
@@ -94,10 +94,12 @@ const StyledContainerSectionInfoProduct = styled.div`
     grid-auto-columns: 1fr; 
     grid-template-columns: 1fr 1fr; 
     grid-template-rows: 1.2fr 0.8fr; 
-        gap: 0px 0px; 
     grid-template-areas: 
         "colorSize details"
         "PribeBuy details"; 
+    height: 13rem;
+    overflow-x: hidden;
+    overflow-y: auto;
         @media ${device.tablet} { 
             grid-auto-columns: 1fr; 
             grid-template-columns: 1fr 1fr; 
@@ -122,6 +124,8 @@ const StyledContainerColorSize = styled.div`
     grid-area: colorSize;
     padding: 15px;
     border-right: 1px solid #D5C4BA;
+    height: 12rem;
+    padding-top: 0;
     @media ${device.mobileL} { 
         border-right: 1px solid #D5C4BA;
         border-bottom: 1px solid #D5C4BA;
@@ -137,6 +141,8 @@ const StyledContainerPriceBuy = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 15px;
+    height: 7rem;
     h3{
         margin-bottom: 15px;
     }
@@ -149,8 +155,10 @@ const StyledContainerDetails = styled.div`
     grid-area: details;
     padding: 15px;
     text-align: center;
+    padding-top: 0;
     h3{
         margin: 15px;
+        font-size: 17px;
     }
     @media ${device.mobileL} { 
         border-right: 1px solid #D5C4BA;
@@ -166,17 +174,19 @@ const StyledBtnBuy = styled.button`
     background: none;
     color: #FFFFFF;
     border: 1px solid #D5C4BA;
-    width: 277px;
-    height: 50px;
+    width: 200px;
+    height: 40px;
     font-size: 15px;
     cursor: pointer;
     :hover{
-        border: 2px solid #FFFFFF;
-    
+    transition: all 0.2s ease-in;
+    border: 2px solid #FFFFFF;
+    filter: drop-shadow(rgb(255, 255, 255) 0 0 1px);
     }
 `
 // select color size
 const StyledContainerSelectSize = styled.div`
+    margin: 20px 0;
     select{
         background: none;
         color: white;
@@ -195,6 +205,10 @@ const StyledContainerSelectSize = styled.div`
         outline: none;
 
     } 
+    h3{
+        margin-bottom: 15px;
+        font-size: 17px;
+    }
 `
 const StyledContainerSelectColor = styled.div`
     display: flex;
@@ -207,6 +221,8 @@ p{
     text-overflow: ellipsis;
     white-space: nowrap;
     max-width: 7.5rem;
+    margin-right: 15px;
+    margin-bottom: 5px;
     }
 `
 const StyledContainerColors = styled.div`
