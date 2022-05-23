@@ -1,10 +1,12 @@
 {/* ------ [ 1 ] ------ */ }
 import SectionMainDescription from "../components/SectionMainDescription"
+import SectionInfoProduct from "../components/SectionInfoProduct"
+import Factura from "../components/2Factura/Factura"
 
 {/* ------ [ 2 ] ------ */ }
 
 import SectionShopProducts from "../components/SectionShopProducts"
-
+import SectionShoppingCart from "../components/SectionShoppingCart"
 {/* ------ [ 3 ] ------ */ }
 import NavBar from "../components/NavBar"
 
@@ -38,13 +40,23 @@ const StyledHome = styled.div`
   }
   `
 
-export default function Home() {
+import React from 'react'
+
+export default function Carrito() {
   return (
     <StyledHome>
-      <SectionMainDescription />
+      {/* ------ [ 1 ] ------ */}
+      {/* <SectionMainDescription /> */}
+      {/* <SectionInfoProduct /> */}
+      <Factura />
+
+      {/* ------ [ 2 ] ------ */}
+
       <SectionShopProducts />
+      {/* ------ [ 3 ] ------ */}
+      {/* <SectionShoppingCart /> */}
+
       <NavBar />
     </StyledHome>
   )
 }
-

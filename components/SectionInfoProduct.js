@@ -97,7 +97,7 @@ const StyledContainerSectionInfoProduct = styled.div`
     grid-template-areas: 
         "colorSize details"
         "PribeBuy details"; 
-    height: 13rem;
+    height: 19.5rem;
     overflow-x: hidden;
     overflow-y: auto;
         @media ${device.tablet} { 
@@ -157,7 +157,7 @@ const StyledContainerDetails = styled.div`
     text-align: center;
     padding-top: 0;
     h3{
-        margin: 15px;
+        margin: 20px 0;
         font-size: 17px;
     }
     @media ${device.mobileL} { 

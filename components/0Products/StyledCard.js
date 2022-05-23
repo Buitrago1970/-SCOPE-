@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
 
 const StyledProduct = styled.div`
  font-family: 'Cinzel', serif;
@@ -93,7 +94,13 @@ const StyledCard = ({ id, limited, tallas, nombre, img, precio }) => {
         <Image className="img" src={img} alt="" width={210} height={210} objectFit="cover" />
       </StyledImage>
       <StyledBottom limited={limited}>
-        <div className="info">INFO</div>
+        <div className="info">
+          <Link href={'/InfoProducto'}>
+            <a>
+              INFO
+            </a>
+          </Link>
+        </div>
         <div className="price">${precio}</div>
         <div className="buy">BUY</div>
       </StyledBottom>

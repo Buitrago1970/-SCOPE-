@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import Link from 'next/link'
+
+import { useRouter } from 'next/router'
 
 const StyledNavBar = styled.div`
 /* background-color: orange; */
@@ -55,13 +58,28 @@ justify-content:flex-end;
 }
 `
 export default function NavBar() {
+    const router = useRouter()
     return (
         <StyledNavBar>
             <StyledUp>
                 <div className='links'>
-                    <StyledLink>INICIO</StyledLink>
-                    <StyledLink selected='true'>CONTACTO</StyledLink>
-                    <StyledLink>CARRITO</StyledLink>
+                    <Link href={'/'}>
+
+                        <StyledLink>INICIO</StyledLink>
+
+                    </Link>
+                    <Link href={'Contacto'}>
+
+                        <StyledLink>CONTACTO</StyledLink>
+
+                    </Link>
+                    <Link href={'/Carrito'}>
+
+                        <StyledLink>CARRITO</StyledLink>
+
+
+                    </Link>
+
                 </div>
             </StyledUp>
             <StyledBtn>

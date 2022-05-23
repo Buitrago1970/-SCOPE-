@@ -8,25 +8,27 @@ const StyledSectionMainDescription = styled.div`
     grid-area: SectionMainDescription; 
     color: #D5C4BA;
     height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
         @media ${device.tablet} { 
             height: 45rem;
             }
 `
 // header
 const StyledContainerHeaderMainDescription = styled.div`
-display: flex;
-justify-content: space-between;
-margin: 15px 10px;
-font-size: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 10px;
+    font-size: 10px;
 `
 const StyledContainerTextHeaderMainDescription = styled.div`
 `
 const StyledContainerPrincipalTextMainDescription = styled.div`
-text-align: center;
-margin-bottom: 40px;
-@media ${device.mobileL} { 
-    margin-bottom: 25px;
-            }
+    text-align: center;
+    margin-bottom: 40px;
+    @media ${device.mobileL} { 
+        margin-bottom: 25px;
+                }
 `
 
 const StyledContainerTextsMainDescription = styled.div`
@@ -47,13 +49,10 @@ const StyledTextAttributes = styled.div`
         }
 `
 const StyledContainerDescriptioTextMainDescription = styled.div`
-max-height: 27%;
+padding: 15px;
     p{
         text-align: center;
         font-size: 30px;
-        max-height: 120px;
-        overflow-y: scroll;
-        scroll-behavior: smooth;
     }
 `
 const StyledContainerTextsAttributes = styled.div`
