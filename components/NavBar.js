@@ -64,21 +64,15 @@ export default function NavBar() {
             <StyledUp>
                 <div className='links'>
                     <Link href={'/'}>
-
                         <StyledLink>INICIO</StyledLink>
-
-                    </Link>
-                    <Link href={'Contacto'}>
-
-                        <StyledLink>CONTACTO</StyledLink>
-
                     </Link>
                     <Link href={'/Carrito'}>
-
                         <StyledLink>CARRITO</StyledLink>
-
-
                     </Link>
+                    <Link href={'Contacto'}>
+                        <StyledLink>CONTACTO</StyledLink>
+                    </Link>
+
 
                 </div>
             </StyledUp>

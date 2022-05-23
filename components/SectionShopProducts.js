@@ -11,8 +11,6 @@ background-image: url("https://i.pinimg.com/564x/90/a2/eb/90a2eb6e6ba3f27ce03b1d
 background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-display:flex;
-
 height:100vh;
 grid-area: SectionShopProducts;
 @media ${device.tablet} { 
@@ -22,11 +20,11 @@ grid-area: SectionShopProducts;
 .container{
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
-    align-items:center;
-    
-    margin: 0 auto;
-    overflow: auto;
+    justify-content: center;
+    max-width: 1500px;
+    height:100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 `
 

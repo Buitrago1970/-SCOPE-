@@ -157,7 +157,7 @@ const StyledContainerDetails = styled.div`
     text-align: center;
     padding-top: 0;
     h3{
-        margin: 20px 0;
+        margin: 20px 0!important;
         font-size: 17px;
     }
     @media ${device.mobileL} { 

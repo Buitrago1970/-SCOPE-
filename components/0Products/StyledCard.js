@@ -5,27 +5,23 @@ import Link from 'next/link'
 
 const StyledProduct = styled.div`
  font-family: 'Cinzel', serif;
- /* font-family: 'Inter'; */
- background-image: linear-gradient(to right, #8e2de263, #4a00e07d);
-
- /* background-image: linear-gradient(to right, #fc5c7d94, #6a82fbc9); */
- border: 1px solid #d5c4ba;
- margin-top:20px;
- width: 14rem;
- height: 20rem;
- padding: 5px;
-
+ font-family: 'Inter'; 
+ border: 1px solid ${({ limited }) => limited ? '#1C1C1C' : '#E9DCCE'};
+ background-color: ${({ limited }) => limited ? '#E9DCCE' : '#1C1C1C'};
+ width: 240px;
+ height: 280px;
+ margin: 10px 5px;
+ padding: 10px;
  .top{
    display:flex;
-   justify-content: ${({ limited }) => limited ? 'space-between' : 'flex-end'};
+    justify-content: space-between;
    .limited-edition{
-    display: ${({ limited }) => limited ? 'flex' : 'none'};
+    display: ${({ limited }) => limited ? 'block' : 'none'};
     flex-direction:column;
     width:15%;
     justify-content:center;
     font-size: 8px;
-    align-items: center;
-    
+    align-items: center;  
     .limited-edition-p{
       color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
     }
@@ -33,18 +29,9 @@ const StyledProduct = styled.div`
       color: #FF0000;
     }
    }
-   .size-product{
-    color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
-    font-size: 10px;
-    min-height: 33px;
-   }
  }
  .product-name{
-   display:flex;
-   justify-content:center;
-   margin:0 auto;
    color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
-   font-weight: 700;
    font-size: 15px;
  }`
 
@@ -55,55 +42,23 @@ display:flex;
    justify-content:center;
    margin:0 auto;
    `
-const StyledBottom = styled.div`
 
-  display:flex;
-   justify-content:space-around;
-   margin:0 auto;
-   border-top:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
-   margin-top:10px;
-   padding-top:10px;
-   font-size: 15px;
-   color: ${({ limited }) => limited ? '#000000' : '#D5C4BA'};
-   .info, .buy{
-    cursor:pointer;
-     padding:0 10px;
-    border:  ${({ limited }) => limited ? '1px solid #000000' : '1px solid #D5C4BA'};
-   }
-   .price{
-    font-size: 15px;
-    display: flex;
-    /* font-family: 'Inter'; */
-    align-items: center;
-   }
-
-   `
-
-const StyledCard = ({ id, limited, tallas, nombre, img, precio }) => {
+const StyledCard = ({ id, limited, nombre, img }) => {
   return (
-    <StyledProduct id={id} limited={limited}>
-      <div className="top">
-        <div className="limited-edition">
+    <StyledProduct limited={limited} id={id} >
+      <div className="top" >
+        <h3 className="product-name">SCOPE {nombre}</h3>
+        <div className="limited-edition" limited={limited}>
           <p className='limited-edition-p'>Limited Edition</p>
           <p className='limited-edition-p-number'>7/8</p>
         </div>
-        <p className="size-product" limited={limited}>{tallas.join("/")}</p>
+
       </div>
-      <h3 className="product-name" limited={limited}>SCOPE {nombre}</h3>
-      <StyledImage>
-        <Image className="img" src={img} alt="" width={210} height={210} objectFit="cover" />
-      </StyledImage>
-      <StyledBottom limited={limited}>
-        <div className="info">
-          <Link href={'/InfoProducto'}>
-            <a>
-              INFO
-            </a>
-          </Link>
-        </div>
-        <div className="price">${precio}</div>
-        <div className="buy">BUY</div>
-      </StyledBottom>
+      <Link href={'/InfoProducto'}>
+        <StyledImage>
+          <Image className="img" src={img} alt="" width={210} height={210} objectFit="cover" />
+        </StyledImage>
+      </Link>
     </StyledProduct>
   )
 }
