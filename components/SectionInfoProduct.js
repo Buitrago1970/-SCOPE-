@@ -97,7 +97,7 @@ const StyledContainerSectionInfoProduct = styled.div`
     grid-template-areas: 
         "colorSize details"
         "PribeBuy details"; 
-    height: 19.5rem;
+    height: 29vh;
     overflow-x: hidden;
     overflow-y: auto;
         @media ${device.tablet} { 

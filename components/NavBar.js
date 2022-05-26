@@ -77,7 +77,7 @@ export default function NavBar() {
                 </div>
             </StyledUp>
             <StyledBtn>
-                <h4 className='by'>{`design & developed by juanbuui`}</h4>
+                <h4 className='by'>{`design & developed by oficialmente512.com`}</h4>
                 <h3 className='year'>©2022</h3>
             </StyledBtn>
         </StyledNavBar>

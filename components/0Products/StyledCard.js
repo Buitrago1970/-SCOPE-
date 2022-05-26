@@ -8,8 +8,8 @@ const StyledProduct = styled.div`
  font-family: 'Inter'; 
  border: 1px solid ${({ limited }) => limited ? '#1C1C1C' : '#E9DCCE'};
  background-color: ${({ limited }) => limited ? '#E9DCCE' : '#1C1C1C'};
- width: 240px;
- height: 300px;
+ width: 220px;
+ height: 250px;
  margin: 10px 5px;
  padding: 10px;
  .top{

@@ -18,7 +18,7 @@ import styled from 'styled-components'
 
 const StyledHome = styled.div`
   display: grid; 
-  grid-template-columns: 1.2fr 1.8fr 0.07fr; 
+  grid-template-columns: 1.5fr 1.5fr 0.07fr; 
   grid-template-rows: 1fr ; 
   gap: 0px 0px; 
   grid-template-areas: 
