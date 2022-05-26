@@ -116,8 +116,8 @@ export default function SectionMainDescription() {
                 </StyledContainerTextAttributes>
             </StyledContainerTextsMainDescription>
             <StyledContainerDescriptioTextMainDescription>
-                <p>                Amorphous is a rising DJ that blew up overnight after going viral time and time again for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience for this incredible mixes, juxtaposing the old school with the new. Hillman Grad Productions teamed up with us to create a unique experience
-                </p>
+                <p>
+                    scope is an italian fashion brand. Founded by db in 2022 as scope , the firm took a radical turn with the arrival of Miuccia, the founders granddaughter, in 1978.Under Miuccias direction, what was a local fur and leather business became an international fashion firm in just a few years. Pradas first prêt-à-porter collection was presented in the autumn-winter season of 1989.                </p>
             </StyledContainerDescriptioTextMainDescription>
 
         </StyledSectionMainDescription>
