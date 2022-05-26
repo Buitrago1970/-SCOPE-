@@ -62,7 +62,55 @@ export default function SectionShopProducts() {
                 <StyledCard{...PortafolioObjOcho} />
                 <StyledCard{...PortafolioObjNueve} />
                 <StyledCard{...PortafolioObjNueve} />
-
+                <StyledCard{...PortafolioObjTres} />
+                <StyledCard{...PortafolioObjCuatro} />
+                <StyledCard{...PortafolioObjCinco} />
+                <StyledCard{...PortafolioObjSeis} />
+                <StyledCard{...PortafolioObjSiete} />
+                <StyledCard{...PortafolioObjOcho} />
+                <StyledCard{...PortafolioObjNueve} />
+                <StyledCard{...PortafolioObjUno} />
+                <StyledCard{...PortafolioObjDos} />
+                <StyledCard{...PortafolioObjTres} />
+                <StyledCard{...PortafolioObjCuatro} />
+                <StyledCard{...PortafolioObjCinco} />
+                <StyledCard{...PortafolioObjSeis} />
+                <StyledCard{...PortafolioObjSiete} />
+                <StyledCard{...PortafolioObjOcho} />
+                <StyledCard{...PortafolioObjNueve} />
+                <StyledCard{...PortafolioObjNueve} />         <StyledCard{...PortafolioObjTres} />
+                <StyledCard{...PortafolioObjCuatro} />
+                <StyledCard{...PortafolioObjCinco} />
+                <StyledCard{...PortafolioObjSeis} />
+                <StyledCard{...PortafolioObjSiete} />
+                <StyledCard{...PortafolioObjOcho} />
+                <StyledCard{...PortafolioObjNueve} />
+                <StyledCard{...PortafolioObjUno} />
+                <StyledCard{...PortafolioObjDos} />
+                <StyledCard{...PortafolioObjTres} />
+                <StyledCard{...PortafolioObjCuatro} />
+                <StyledCard{...PortafolioObjCinco} />
+                <StyledCard{...PortafolioObjSeis} />
+                <StyledCard{...PortafolioObjSiete} />
+                <StyledCard{...PortafolioObjOcho} />
+                <StyledCard{...PortafolioObjNueve} />
+                <StyledCard{...PortafolioObjNueve} />         <StyledCard{...PortafolioObjTres} />
+                <StyledCard{...PortafolioObjCuatro} />
+                <StyledCard{...PortafolioObjCinco} />
+                <StyledCard{...PortafolioObjSeis} />
+                <StyledCard{...PortafolioObjSiete} />
+                <StyledCard{...PortafolioObjOcho} />
+                <StyledCard{...PortafolioObjNueve} />
+                <StyledCard{...PortafolioObjUno} />
+                <StyledCard{...PortafolioObjDos} />
+                <StyledCard{...PortafolioObjTres} />
+                <StyledCard{...PortafolioObjCuatro} />
+                <StyledCard{...PortafolioObjCinco} />
+                <StyledCard{...PortafolioObjSeis} />
+                <StyledCard{...PortafolioObjSiete} />
+                <StyledCard{...PortafolioObjOcho} />
+                <StyledCard{...PortafolioObjNueve} />
+                <StyledCard{...PortafolioObjNueve} />
 
 
             </div>
